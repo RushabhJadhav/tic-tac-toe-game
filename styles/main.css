@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    /* border: 1px solid red; */
+    height: 100vh;
+    background: #2E3239;
+}
+.header {
+    text-align: center;
+    margin: 30px 0;
+}
+.boxContainer {
+    display: grid;
+    grid-template-rows: 30% 30% 30%;
+    grid-template-columns: 30% 30% 30%;
+    /* border: 1px solid red; */
+    gap: 5%;
+    width: 400px;
+    height: 400px;
+    margin: 50px auto;
+}
+.box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* width: 100px;
+    height: 100px; */
+    border: 1px solid black;
+    font-size: 5rem;
+    cursor: pointer;
+    user-select: none;
+}
+.box:hover {
+    background-color: grey;
+}
