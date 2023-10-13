@@ -13,7 +13,6 @@ for(let i = 0; i < box.length; i++) {
     box[i].addEventListener('click', () => {
         boxClicked = !boxClicked;
         turn = !turn;
-        box[i].style.fontSize = '7rem';
         
         if(turn && boxClicked) {
             box[i].style.backgroundImage = "url('../images/Vector 5.png'";
@@ -23,6 +22,5 @@ for(let i = 0; i < box.length; i++) {
             playerTwo.push(i)
         }
         checkWinner(playerOne, playerTwo)
-        // console.log(playerOne)
     })
 }

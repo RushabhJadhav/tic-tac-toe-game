@@ -8,7 +8,7 @@
 body {
     height: 100vh;
     background-color: #00BDAD;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 }
 .header {
     text-align: center;
