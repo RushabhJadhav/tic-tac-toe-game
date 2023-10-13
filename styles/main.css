@@ -8,10 +8,12 @@
 body {
     height: 100vh;
     background-color: #00BDAD;
+    overflow-y: hidden;
 }
 .header {
     text-align: center;
-    margin: 30px 0;
+    margin: 50px 0;
+    font-size: 3rem;
 }
 .boxContainer {
     display: grid;
@@ -22,7 +24,7 @@ body {
     gap: 4%;
     width: 400px;
     height: 400px;
-    margin: 50px auto;
+    margin: 0 auto;
 }
 .box {
     display: flex;
@@ -33,7 +35,23 @@ body {
     font-size: 5rem;
     cursor: pointer;
     user-select: none;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 /* .box:hover {
     background-color: whitesmoke;
 } */
+.scores {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+    /* border: 1px solid red; */
+    height: 100px;
+    margin-top: 10px;
+}
+.player {
+    color: #00A193;
+    font-size: 1.5rem;
+}
