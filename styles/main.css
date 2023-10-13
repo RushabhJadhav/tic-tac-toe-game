@@ -6,7 +6,7 @@
 body {
     /* border: 1px solid red; */
     height: 100vh;
-    background: #2E3239;
+    /* background: #2E3239; */
 }
 .header {
     text-align: center;
@@ -35,5 +35,5 @@ body {
     user-select: none;
 }
 .box:hover {
-    background-color: grey;
+    background-color: whitesmoke;
 }
