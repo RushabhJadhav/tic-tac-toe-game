@@ -11,12 +11,20 @@ for(let i = 0; i < box.length; i++) {
     box[i].addEventListener('click', () => {
         boxClicked = !boxClicked;
         turn = !turn;
-        if(turn) {
-            box[i].innerHTML = "" && boxClicked ? "X" : "0";
+        box[i].style.fontSize = '7rem';
+        
+        if(turn && boxClicked) {
+            box[i].style.backgroundImage = "url('../images/Vector 5.png'";
+            box[i].style.backgroundPosition = "center";
+            box[i].style.backgroundRepeat = "no-repeat";
+            box[i].style.color = '#fff';
             playerOne.push(i)
         } else {
-            box[i].innerHTML = boxClicked ? "0" : "X";
+            box[i].style.backgroundImage = "url('../images/Ellipse 5.png'";
+            box[i].style.backgroundPosition = "center";
+            box[i].style.backgroundRepeat = "no-repeat";
             playerTwo.push(i)
+            box[i].style.color = '#54545';
         }
         checkWinner()
         console.log(playerOne)
@@ -34,10 +42,16 @@ function checkWinner() {
         let plOne = arr.every(item => playerOne.includes(item))
         let plTwo = arr.every(item => playerTwo.includes(item))
         if(plOne) {
-            alert('player one won')
+            setTimeout(() => {
+                alert('player one won')
+            }, 200)
         } else if (plTwo) {
-            alert('player two won')
-        } 
+            setTimeout(() => {
+                alert('player two won')
+            }, 200)
+        } else if(!plOne && !plTwo && !playerOne.length != 0 && !playerTwo.length != 0) {
+            console.log('draw')
+        }
     }
     console.log(playerOne)
     console.log(playerTwo)
