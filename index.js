@@ -7,8 +7,6 @@ const box = document.getElementsByClassName('box');
 let boxClicked = false;
 let turn = false;
 
-// console.log(box)
-
 for(let i = 0; i < box.length; i++) {
     box[i].addEventListener('click', () => {
         boxClicked = !boxClicked;

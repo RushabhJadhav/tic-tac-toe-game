@@ -10,6 +10,7 @@
     <div class="root">
         <h1 class="header">Tic Tac Toe</h1>
         <div class="boxContainer">
+            <div class="line"></div>
             <div class="box"></div>
             <div class="box"></div>
             <div class="box"></div>
@@ -21,9 +22,11 @@
             <div class="box"></div>
         </div>
         <div class="scores">
-            <div class="player">Player 1 : <span id="player1-score"></span></div>
-            <div class="player">Player 2 : <span id="player2-score"></span></div>
+            <div class="player">Player One : <span id="player1-score"></span></div>
+            <div class="player">Tie : <span id="draw"></span></div>
+            <div class="player">Player Two : <span id="player2-score"></span></div>
         </div>
+        <button id="reset-btn">Reset</button>
     </div>
     <script src="index.js" type="module"></script>
 </body>
